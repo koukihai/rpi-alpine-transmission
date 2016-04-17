@@ -23,6 +23,11 @@ RUN rm -rf /var/cache/apk/*
 RUN id transmission || adduser -S -s /bin/false -H -D transmission
 RUN addgroup transmission users 
 
+RUN mkdir -p /unsorted /incomplete /config /blackhole && \
+    chmod 775 /unsorted /incomplete /config /blackhole && \
+    chgrp -R users /unsorted /blackhole
+RUN chown -R transmission:users /incomplete /config
+
 # Continue as user 'transmission'
 USER transmission
 
