@@ -1,4 +1,5 @@
 # rpi-alpine-transmission
+[![Build Status](https://travis-ci.org/koukihai/rpi-alpine-transmission.svg?branch=master)](https://travis-ci.org/koukihai/rpi-alpine-transmission)
 
 [Transmission](https://transmissionbt.com) is a cross-platform BitTorrent client that is:
   - OpenSource
